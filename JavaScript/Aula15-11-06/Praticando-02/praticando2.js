@@ -1,0 +1,3 @@
+const lampada=document.querySelector("#lampada"),legenda=document.querySelector("#legenda");new Image().src="img/lampada-acesa.webp";
+lampada.addEventListener("mouseover",()=>{document.body.classList.add("acesa");lampada.src="img/lampada-acesa.webp";legenda.textContent="Lâmpada acesa";});
+lampada.addEventListener("mouseout",()=>{document.body.classList.remove("acesa");lampada.src="img/lampada.webp";legenda.textContent="Lâmpada apagada";});
