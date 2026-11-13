@@ -34,7 +34,7 @@ document.querySelector("#remParagrafos").addEventListener("click", () => {
 
 document.querySelector("#addImagem").addEventListener("click", () => {
     const img = document.createElement("img");
-    img.src = "img/gatinho.webp";
+    img.src = "img/gatinho.jpg";
     img.alt = "Gatinho";
     img.width = 80;
     img.className = "m-1 rounded";
