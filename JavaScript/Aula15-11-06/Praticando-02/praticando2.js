@@ -1,19 +1,16 @@
 const lampada = document.querySelector("#lampada");
 const legenda = document.querySelector("#legenda");
 
-// Carrega a imagem da lâmpada acesa antes, para não piscar no primeiro hover
-new Image().src = "img/lampada-acesa.webp";
+new Image().src = "img/lampada-acesa.png";
 
-// Mouse sobre a lâmpada: acende
 lampada.addEventListener("mouseover", () => {
     document.body.classList.add("acesa");
-    lampada.src = "img/lampada-acesa.webp";
+    lampada.src = "img/lampada-acesa.png";
     legenda.textContent = "Lâmpada acesa";
 });
 
-// Mouse sai de cima da lâmpada: apaga de novo
 lampada.addEventListener("mouseout", () => {
     document.body.classList.remove("acesa");
-    lampada.src = "img/lampada.webp";
+    lampada.src = "img/lampada.png";
     legenda.textContent = "Lâmpada apagada";
 });
